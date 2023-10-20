@@ -486,55 +486,55 @@ public class GameScreen_2P extends Screen {
         drawManager.drawBackgroundPlayer(this, SEPARATION_LINE_HEIGHT, this.ship_2P.getPositionX(), this.ship_2P.getPositionY(), this.ship_2P.getWidth(), this.ship_2P.getHeight());
 
         drawManager.drawEntity(this.ship_1P, this.ship_1P.getPositionX(),
-                this.ship_1P.getPositionY());
+                this.ship_1P.getPositionY(), 2);
         drawManager.drawEntity(this.bulletLine_1P, this.ship_1P.getPositionX() + 12,
-                this.ship_1P.getPositionY() - 320);
+                this.ship_1P.getPositionY() - 320, 1);
 
         drawManager.drawEntity(this.ship_2P, this.ship_2P.getPositionX(),
-                this.ship_2P.getPositionY());
+                this.ship_2P.getPositionY(), 2);
         drawManager.drawEntity(this.bulletLine_2P, this.ship_2P.getPositionX() + 12,
-                this.ship_2P.getPositionY() - 320);
+                this.ship_2P.getPositionY() - 320, 1);
 
         if (this.enemyShipSpecial != null)
             drawManager.drawEntity(this.enemyShipSpecial,
                     this.enemyShipSpecial.getPositionX(),
-                    this.enemyShipSpecial.getPositionY());
+                    this.enemyShipSpecial.getPositionY(), 2);
         if (this.laser != null)
             drawManager.drawEntity(this.laser,
                     this.laser.getPositionX(),
-                    this.laser.getPositionY());
+                    this.laser.getPositionY(), 1);
         if (this.laserline != null)
             drawManager.drawEntity(this.laserline,
                     this.laserline.getPositionX(),
-                    this.laserline.getPositionY());
+                    this.laserline.getPositionY(), 1);
         for (Item item : this.items)
             drawManager.drawEntity(item, item.getPositionX(),
-                    item.getPositionY());
+                    item.getPositionY(), 1);
         enemyShipFormation.draw();
 
         for (Bullet bullet : this.bullets)
             drawManager.drawEntity(bullet, bullet.getPositionX(),
-                    bullet.getPositionY());
+                    bullet.getPositionY(), 1);
 
         for (Bullet bullet : this.bullets_1P)
             drawManager.drawEntity(bullet, bullet.getPositionX(),
-                    bullet.getPositionY());
+                    bullet.getPositionY(), 1);
 
         for (Bullet bullet : this.bullets_2P)
             drawManager.drawEntity(bullet, bullet.getPositionX(),
-                    bullet.getPositionY());
+                    bullet.getPositionY(), 1);
 
         for (BulletY bulletY : this.bulletsY)
             drawManager.drawEntity(bulletY, bulletY.getPositionX(),
-                    bulletY.getPositionY());
+                    bulletY.getPositionY(), 1);
 
         for (BulletY bulletY : this.bulletsY_1P)
             drawManager.drawEntity(bulletY, bulletY.getPositionX(),
-                    bulletY.getPositionY());
+                    bulletY.getPositionY(), 1);
 
         for (BulletY bulletY : this.bulletsY_2P)
             drawManager.drawEntity(bulletY, bulletY.getPositionX(),
-                    bulletY.getPositionY());
+                    bulletY.getPositionY(), 1);
 
 
         // Interface.

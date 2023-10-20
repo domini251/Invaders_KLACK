@@ -331,7 +331,7 @@ public class EnemyShipFormation implements Iterable<EnemyShip> {
 		for (List<EnemyShip> column : this.enemyShips)
 			for (EnemyShip enemyShip : column)
 				drawManager.drawEntity(enemyShip, enemyShip.getPositionX(),
-						enemyShip.getPositionY());
+						enemyShip.getPositionY(), 2);
 	}
 
 	/**

@@ -200,57 +200,57 @@ public final class DrawManager {
 			Random random = new Random();
 			int Trash_enemyA = random.nextInt(3);
 			spriteMap = new LinkedHashMap<SpriteType, boolean[][]>();
-			spriteMap.put(SpriteType.ShipA, new boolean[13][8]);
-			spriteMap.put(SpriteType.ShipB, new boolean[13][8]);
-			spriteMap.put(SpriteType.ShipC, new boolean[13][8]);
-			spriteMap.put(SpriteType.ShipADestroyed, new boolean[13][8]);
-			spriteMap.put(SpriteType.ShipBDestroyed, new boolean[13][8]);
-			spriteMap.put(SpriteType.ShipCDestroyed, new boolean[13][8]);
+			spriteMap.put(SpriteType.ShipA, new boolean[26][16]);
+			spriteMap.put(SpriteType.ShipB, new boolean[26][16]);
+			spriteMap.put(SpriteType.ShipC, new boolean[26][16]);
+			spriteMap.put(SpriteType.ShipADestroyed, new boolean[26][16]);
+			spriteMap.put(SpriteType.ShipBDestroyed, new boolean[26][16]);
+			spriteMap.put(SpriteType.ShipCDestroyed, new boolean[26][16]);
 			spriteMap.put(SpriteType.Bullet, new boolean[3][5]);
 			spriteMap.put(SpriteType.BulletY, new boolean[5][7]);
 			spriteMap.put(SpriteType.EnemyBullet, new boolean[3][5]);
 			spriteMap.put(SpriteType.EnemyBulletLeft, new boolean[3][5]);
 			spriteMap.put(SpriteType.EnemyBulletRight, new boolean[3][5]);
 			if (Trash_enemyA == 0){
-				spriteMap.put(SpriteType.EnemyShipA1, new boolean[12][8]);
-				spriteMap.put(SpriteType.EnemyShipA2, new boolean[12][8]);
-				spriteMap.put(SpriteType.Trash1, new boolean[12][8]);
-				spriteMap.put(SpriteType.Trash2, new boolean[12][8]);
-				spriteMap.put(SpriteType.Trash3, new boolean[12][8]);
-				spriteMap.put(SpriteType.Trash4, new boolean[12][8]);
+				spriteMap.put(SpriteType.EnemyShipA1, new boolean[24][16]);
+				spriteMap.put(SpriteType.EnemyShipA2, new boolean[24][16]);
+				spriteMap.put(SpriteType.Trash1, new boolean[24][16]);
+				spriteMap.put(SpriteType.Trash2, new boolean[24][16]);
+				spriteMap.put(SpriteType.Trash3, new boolean[24][16]);
+				spriteMap.put(SpriteType.Trash4, new boolean[24][16]);
 			}
 			else if (Trash_enemyA == 1){
-				spriteMap.put(SpriteType.Trash1, new boolean[12][8]);
-				spriteMap.put(SpriteType.Trash2, new boolean[12][8]);
-				spriteMap.put(SpriteType.EnemyShipA1, new boolean[12][8]);
-				spriteMap.put(SpriteType.EnemyShipA2, new boolean[12][8]);
-				spriteMap.put(SpriteType.Trash3, new boolean[12][8]);
-				spriteMap.put(SpriteType.Trash4, new boolean[12][8]);
+				spriteMap.put(SpriteType.Trash1, new boolean[24][16]);
+				spriteMap.put(SpriteType.Trash2, new boolean[24][16]);
+				spriteMap.put(SpriteType.EnemyShipA1, new boolean[24][16]);
+				spriteMap.put(SpriteType.EnemyShipA2, new boolean[24][16]);
+				spriteMap.put(SpriteType.Trash3, new boolean[24][16]);
+				spriteMap.put(SpriteType.Trash4, new boolean[24][16]);
 			}
 			else{
-				spriteMap.put(SpriteType.Trash1, new boolean[12][8]);
-				spriteMap.put(SpriteType.Trash2, new boolean[12][8]);
-				spriteMap.put(SpriteType.Trash3, new boolean[12][8]);
-				spriteMap.put(SpriteType.Trash4, new boolean[12][8]);
-				spriteMap.put(SpriteType.EnemyShipA1, new boolean[12][8]);
-				spriteMap.put(SpriteType.EnemyShipA2, new boolean[12][8]);
+				spriteMap.put(SpriteType.Trash1, new boolean[24][16]);
+				spriteMap.put(SpriteType.Trash2, new boolean[24][16]);
+				spriteMap.put(SpriteType.Trash3, new boolean[24][16]);
+				spriteMap.put(SpriteType.Trash4, new boolean[24][16]);
+				spriteMap.put(SpriteType.EnemyShipA1, new boolean[24][16]);
+				spriteMap.put(SpriteType.EnemyShipA2, new boolean[24][16]);
 			}
-			spriteMap.put(SpriteType.EnemyShipB1, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipB2, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipC1, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipC2, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipSC1, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipSC2, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipD1, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipD2, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipD3, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipD4, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipD5, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipD6, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipSpecial1, new boolean[16][7]);
-			spriteMap.put(SpriteType.EnemyShipSpecial2, new boolean[16][7]);
-			spriteMap.put(SpriteType.EnemyShipSpecial3, new boolean[16][7]);
-			spriteMap.put(SpriteType.EnemyShipSpecial4, new boolean[16][7]);
+			spriteMap.put(SpriteType.EnemyShipB1, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipB2, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipC1, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipC2, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipSC1, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipSC2, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipD1, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipD2, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipD3, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipD5, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipD4, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipD6, new boolean[24][16]);
+			spriteMap.put(SpriteType.EnemyShipSpecial1, new boolean[32][14]);
+			spriteMap.put(SpriteType.EnemyShipSpecial2, new boolean[32][14]);
+			spriteMap.put(SpriteType.EnemyShipSpecial3, new boolean[32][14]);
+			spriteMap.put(SpriteType.EnemyShipSpecial4, new boolean[32][14]);
 			spriteMap.put(SpriteType.Explosion, new boolean[13][7]);
 			spriteMap.put(SpriteType.BulletLine, new boolean[1][160]);
 			spriteMap.put(SpriteType.Explosion2, new boolean[13][7]);
@@ -264,9 +264,9 @@ public final class DrawManager {
 			spriteMap.put(SpriteType.Laser, new boolean[2][240]);
 			spriteMap.put(SpriteType.LaserLine, new boolean[1][240]);
 			spriteMap.put(SpriteType.Coin, new boolean[7][7]);
-			spriteMap.put(SpriteType.ShipAShileded, new boolean[13][8]);
-			spriteMap.put(SpriteType.ShipBShileded, new boolean[13][8]);
-			spriteMap.put(SpriteType.ShipCShileded, new boolean[13][8]);
+			spriteMap.put(SpriteType.ShipAShileded, new boolean[26][16]);
+			spriteMap.put(SpriteType.ShipBShileded, new boolean[26][16]);
+			spriteMap.put(SpriteType.ShipCShileded, new boolean[26][16]);
 			spriteMap.put(SpriteType.Explosion4, new boolean[10][10]);
 			spriteMap.put(SpriteType.gravestone, new boolean[13][9]);
 			spriteMap.put(SpriteType.Ghost, new boolean[9][11]);
@@ -358,15 +358,15 @@ public final class DrawManager {
 	 *                  Coordinates for the upper side of the image.
 	 */
 	public void drawEntity(final Entity entity, final int positionX,
-			final int positionY) {
+			final int positionY, int resolution) {
 		boolean[][] image = spriteMap.get(entity.getSpriteType());
 
 		backBufferGraphics.setColor(entity.getColor());
 		for (int i = 0; i < image.length; i++)
 			for (int j = 0; j < image[i].length; j++)
 				if (image[i][j])
-					backBufferGraphics.drawRect(positionX + i * 2, positionY
-							+ j * 2, 1, 1);
+					backBufferGraphics.drawRect(positionX + i * 2 / resolution, positionY
+							+ j * 2 / resolution, 1 / resolution, 1 / resolution);
 	}
 
 	/**
@@ -1929,10 +1929,10 @@ public final class DrawManager {
 			if ( (30 <timercount && timercount<50) || (110 <timercount && timercount<130) ) y1 -=5;
 			else if (70<timercount && timercount <90) x1+=5;
 
-			this.drawEntity(SpriteType.values()[12],x1+15,y1+10,2.3,2.3, Color.white);
-			this.drawEntity(SpriteType.values()[14],x1+60,y1+10,2.4,2.4, Color.white);
-			this.drawEntity(SpriteType.values()[18],x1+100,y1+10,3,2.4, Color.white);
-			this.drawEntity(SpriteType.values()[25],x1+145,y1+13,2,2, Color.white);
+			this.drawEntity(SpriteType.values()[12],x1+15,y1+10,1.15,1.15, Color.white);
+			this.drawEntity(SpriteType.values()[14],x1+60,y1+10,1.2,1.2, Color.white);
+			this.drawEntity(SpriteType.values()[18],x1+100,y1+10,1.5,1.2, Color.white);
+			this.drawEntity(SpriteType.values()[25],x1+145,y1+13,1,1, Color.white);
 		}
 
 

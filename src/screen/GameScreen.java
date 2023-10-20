@@ -433,33 +433,33 @@ public class GameScreen extends Screen {
 		drawManager.drawBackgroundPlayer(this, SEPARATION_LINE_HEIGHT, this.ship.getPositionX(), this.ship.getPositionY(), this.ship.getWidth(), this.ship.getHeight());
 
 		drawManager.drawEntity(this.ship, this.ship.getPositionX(),
-				this.ship.getPositionY());
+				this.ship.getPositionY(), 2);
 		drawManager.drawEntity(this.bulletLine, this.ship.getPositionX() + 12,
-				this.ship.getPositionY() - 320);
+				this.ship.getPositionY() - 320, 1);
 		if (this.enemyShipSpecial != null)
 			drawManager.drawEntity(this.enemyShipSpecial,
 					this.enemyShipSpecial.getPositionX(),
-					this.enemyShipSpecial.getPositionY());
+					this.enemyShipSpecial.getPositionY(), 2);
 		if (this.laser != null)
 			drawManager.drawEntity(this.laser,
 					this.laser.getPositionX(),
-					this.laser.getPositionY());
+					this.laser.getPositionY(), 1);
 		if (this.laserline != null)
 			drawManager.drawEntity(this.laserline,
 					this.laserline.getPositionX(),
-					this.laserline.getPositionY());
+					this.laserline.getPositionY(), 1);
 		for (Item item : this.items)
 			drawManager.drawEntity(item, item.getPositionX(),
-					item.getPositionY());
+					item.getPositionY(), 1);
 		enemyShipFormation.draw();
 
 		for (Bullet bullet : this.bullets)
 			drawManager.drawEntity(bullet, bullet.getPositionX(),
-					bullet.getPositionY());
+					bullet.getPositionY(), 1);
 
 		for (BulletY bulletY : this.bulletsY)
 			drawManager.drawEntity(bulletY, bulletY.getPositionX(),
-					bulletY.getPositionY());
+					bulletY.getPositionY(), 1);
 
 		// Interface.
 		drawManager.drawScore(this, this.score);
